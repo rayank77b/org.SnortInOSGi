@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AlertPacketDetails
+Bundle-SymbolicName: org.SnortInOSGi.frontend.AlertPacketDetails; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.snortinosgi.frontend.alertpacketdetails.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.SnortInOSGi.openAPI.snortschema;bundle-version="1.0.0",
+ org.SnortInOSGi.openAPI.interfaces;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.snortinosgi.frontend.alertpacketdetails.views
+Import-Package: ch.ethz.iks.r_osgi;version="1.0.0.RC4",
+ ch.ethz.iks.r_osgi.types;version="1.0.0.RC4"

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="org.SnortInOSGi.frontend.SnortInOSGiGUI.product" uid="org.SnortInOSGi.frontend.SnortInOSGiGUI.product" id="org.SnortInOSGi.frontend.SnortInOSGiGUI.product1" application="org.SnortInOSGi.frontend.SnortInOSGiGUI.application" useFeatures="false" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="ch.ethz.iks.r_osgi.remote"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="org.SnortInOSGi.frontend.AlertPacketDetails"/>
+      <plugin id="org.SnortInOSGi.frontend.Alerts"/>
+      <plugin id="org.SnortInOSGi.frontend.AlertsRebuilded"/>
+      <plugin id="org.SnortInOSGi.frontend.ProtocolStatistics"/>
+      <plugin id="org.SnortInOSGi.frontend.RebuildConfig"/>
+      <plugin id="org.SnortInOSGi.frontend.SnortInOSGiGUI"/>
+      <plugin id="org.SnortInOSGi.frontend.extlibs.jfreechart"/>
+      <plugin id="org.SnortInOSGi.openAPI.interfaces"/>
+      <plugin id="org.SnortInOSGi.openAPI.snortschema"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.objectweb.asm"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="ch.ethz.iks.r_osgi.remote" autoStart="false" startLevel="0" />
+      <plugin id="com.ibm.icu" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.AlertPacketDetails" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.Alerts" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.AlertsRebuilded" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.ProtocolStatistics" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.RebuildConfig" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.SnortInOSGiGUI" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.frontend.extlibs.jfreechart" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.openAPI.interfaces" autoStart="false" startLevel="0" />
+      <plugin id="org.SnortInOSGi.openAPI.snortschema" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.commands" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.contenttype" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.observable" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.databinding.property" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.expressions" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.jobs" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.app" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.equinox.preferences" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.equinox.registry" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.help" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.jface" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.jface.databinding" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.osgi" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.osgi.services" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.swt" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.ui" autoStart="false" startLevel="0" />
+      <plugin id="org.eclipse.ui.workbench" autoStart="false" startLevel="0" />
+      <plugin id="org.objectweb.asm" autoStart="false" startLevel="0" />
+   </configurations>
+
+</product>

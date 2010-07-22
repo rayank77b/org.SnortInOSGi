@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JUnitTests
+Bundle-SymbolicName: org.SnortInOSGi.JUnitTests
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit4;bundle-version="4.5.0",
+ org.SnortInOSGi.openAPI.snortschema;bundle-version="1.0.0",
+ org.SnortInOSGi.dbanalyzer.DBAreader;bundle-version="1.0.0",
+ org.SnortInOSGi.dbanalyzer.RebuildDB;bundle-version="1.0.0",
+ org.SnortInOSGi.bundle.DBconnector;bundle-version="1.0.0",
+ org.SnortInOSGi.backend.SMDBreader;bundle-version="1.0.0",
+ org.SnortInOSGi.backend.SMDBwriter;bundle-version="1.0.0",
+ org.SnortInOSGi.openAPI.interfaces;bundle-version="1.0.0",
+ org.SnortInOSGi.bundle.Config;bundle-version="1.0.0"

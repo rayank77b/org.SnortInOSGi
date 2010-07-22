@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="RebuildConfigCategory"
+            id="org.SnortInOSGi.frontend.RebuildConfig">
+      </category>
+      <view
+      		allowMultiple="true"
+            name="RebuildConfigView"
+            icon="icons/sample.gif"
+            category="org.SnortInOSGi.frontend.RebuildConfig"
+            class="org.snortinosgi.frontend.rebuildconfig.views.RebuildConfigView"
+            id="org.snortinosgi.frontend.rebuildconfig.views.RebuildConfigView">
+      </view>
+   </extension>
+
+</plugin>

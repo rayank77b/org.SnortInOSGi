@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<org.SnortInOSGi.bundle.Config.configuration>
+    <hosts>
+        <dbdriver>com.mysql.jdbc.Driver</dbdriver>
+        <dbname>snort100</dbname>
+        <dburl>mysql</dburl>
+        <hostname>localhost</hostname>
+        <port>3306</port>
+        <rootusername>root</rootusername>
+        <rootuserpassword>asdf1234</rootuserpassword>
+        <snortusername>snort</snortusername>
+        <snortuserpassword>snortpasswrd</snortuserpassword>
+    </hosts>
+</org.SnortInOSGi.bundle.Config.configuration>

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Interfaces
+Bundle-SymbolicName: org.SnortInOSGi.openAPI.interfaces
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.SnortInOSGi.openAPI.snortschema;bundle-version="1.0.0"
+Export-Package: org.SnortInOSGi.openAPI.interfaces.backend,
+ org.SnortInOSGi.openAPI.interfaces.dbanalyzer,
+ org.SnortInOSGi.openAPI.interfaces.getter
+Import-Package: ch.ethz.iks.r_osgi;version="1.0.0.RC4",
+ ch.ethz.iks.r_osgi.types;version="1.0.0.RC4",
+ org.osgi.framework;version="1.5.0"

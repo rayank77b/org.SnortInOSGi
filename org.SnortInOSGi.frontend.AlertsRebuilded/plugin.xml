@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Alerts Category"
+            id="org.SnortInOSGi.frontend.AlertsRebuilded">
+      </category>
+      <view
+            allowMultiple="true"
+            category="org.SnortInOSGi.frontend.AlertsRebuilded"
+            class="org.snortinosgi.frontend.alertsrebuilded.views.AlertsRebuildedView"
+            icon="icons/sample.gif"
+            id="org.snortinosgi.frontend.alertsrebuilded.views.AlertsRebuildedView"
+            name="AlertsRebuildedView">
+      </view>
+   </extension>
+
+</plugin>

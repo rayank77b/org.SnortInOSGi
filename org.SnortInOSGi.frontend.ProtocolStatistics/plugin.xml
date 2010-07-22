@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.SnortInOSGi.frontend.ProtocolStatistics.Category"
+            name="Protocol Statistic Category">
+      </category>
+      <view
+            allowMultiple="true"
+            class="org.snortinosgi.frontend.protocolstatistics.views.ProtocolStatisticView"
+            id="org.SnortInOSGi.frontend.ProtocolStatistics.View"
+            name="Protocol Statistic"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

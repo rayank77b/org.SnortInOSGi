@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IPFields
+Bundle-SymbolicName: org.SnortInOSGi.openAPI.interfaces.IPFields
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.SnortInOSGi.openAPI.interfaces.IPFields

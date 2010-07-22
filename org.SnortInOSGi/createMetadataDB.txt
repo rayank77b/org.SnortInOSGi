@@ -1,0 +1,72 @@
+
+
+create database metadataDB;
+
+use metadataDB;
+
+CREATE TABLE metadata(
+    dbname VARCHAR(100) NOT NULL,
+    sqlstring TEXT NOT NULL
+);
+
+
+-- test
+INSERT INTO metadata VALUES('zzztestSnort1', 'data2:eventcid;eventsid;eventtimestamp;signaturename;signatureclassname;signaturepriority;iphdrdst;iphdrsrc;iphdrproto');
+INSERT INTO metadata VALUES('zzztestSnort1', 'data3:eventcid;eventtimestamp;signaturename;signatureclassname;iphdrdst;iphdrsrc');
+
+
+
+
+
+DELETE FROM metadata WHERE dbname LIKE 'test%';
+
+
+
+
+INSERT INTO metadata VALUES('zzztestSnort1','data:eventcid;eventsid;eventtimestamp;signaturename;signatureclassname;signaturepriority;iphdrdst;iphdrsrc');
+
+create database zzztestSnort1;
+use zzztestSnort1;
+
+CREATE TABLE data(
+    eventcid 	  	INT 	   UNSIGNED NOT NULL,
+    eventsid 	  	INT 	   UNSIGNED NOT NULL,
+    eventtimestamp 	DATETIME  NOT NULL,
+    signaturename VARCHAR(255) NOT NULL,
+    signatureclassname VARCHAR(60) NOT NULL,
+    signaturepriority INT UNSIGNED,
+    iphdrdst  INT      UNSIGNED NOT NULL,
+    iphdrsrc  INT      UNSIGNED NOT NULL
+  );
+
+
+INSERT INTO zzztestSnort1.data
+(eventcid,eventsid,eventtimestamp,signaturename,signatureclassname,signaturepriority,iphdrdst,iphdrsrc)
+SELECT 
+event.cid AS eventcid, 
+event.sid AS eventsid, 
+event.timestamp AS eventtimestamp, 
+signature.sig_name AS signaturename,
+sig_class.sig_class_name AS signatureclassname,
+signature.sig_priority AS signaturepriority,
+iphdr.ip_dst AS iphdrdst,
+iphdr.ip_src AS iphdrsrc
+FROM event,signature, sig_class,iphdr 
+WHERE event.signature=signature.sig_id 
+AND signature.sig_class_id=sig_class.sig_class_id 
+AND event.cid=iphdr.cid;
+LIMIT 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
